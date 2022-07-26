@@ -45,10 +45,16 @@ img {
   display: flex;
   flex-direction: column;
   text-align: right;
+  font-size: 16px;
   width: 250px;
   height: 300px;
   padding-left: 300px;
   padding-right: 60px;
+}
+.right {
+  display: flex;
+  width: 650px;
+  height: 350px;
 }
 .content {
   display: flex;
@@ -60,8 +66,7 @@ img {
 .content_images {
   display: flex;
   flex-direction: row;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding: 0px 65px;
   color: white;
   align-items: center;
   text-align: center;
@@ -80,4 +85,28 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+@media (max-width: 700px) {
+  .left {
+    /* flex-direction: row; */
+    /* text-align: justify; */
+    width: 200px;
+    height: 250px;
+    padding: 0;
+    font-size: 12px;
+  }
+  .content_images {
+    padding: 0px;
+  }
+  .content {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .right {
+    width: 100px;
+    height: 250px;
+  }
+  .header_logo {
+    font-size: 18px;
+  }
 }
